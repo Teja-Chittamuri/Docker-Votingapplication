@@ -1,5 +1,6 @@
-This repository is mainly to explain the process of using docker-compose to deploy Multi-Tier voting application using a single docker-compose command.
-services:
+This repository is mainly to explain the process of using docker-compose to deploy Multi-Tier voting application using a single command "docker-compose up -d"
+services used in this project
+===============================
   1. VotingPage --- Frontend
   2. Redis   --- cache 
   3. Db  --- To store the vote
@@ -7,6 +8,16 @@ services:
   5. ResultPage  -- Frontend
 
 * For docker images you can refer my repo https://hub.docker.com/search?q=tejachittamuri in Dockerhub. I built the docker images from the src code and I pushed them to my dockerhub repository.
+------------------------------------------
+List of Docker Images that are used in this project
+==================================================
+tejachittamuri/voteappui:v1
+redis:latest
+postgres:9.4
+tejachittamuri/workerrole
+tejachittamuri/resultappui:v1
+
+
 
 ![image](https://user-images.githubusercontent.com/111578142/223795112-d943fd58-2fd9-4281-93f3-c24284cf5336.png)
 ![image](https://user-images.githubusercontent.com/111578142/223795211-d3a65060-dfd6-4bea-b942-642a1b6878f2.png)
